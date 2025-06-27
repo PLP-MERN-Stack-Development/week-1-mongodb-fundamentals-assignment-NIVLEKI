@@ -1,47 +1,67 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19861454&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+# 📚 MongoDB Bookstore Assignment
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+This repository contains my Week 1 MongoDB assignment for the PLP course.  
+I used **MongoDB Atlas** to create and manage the `plp_bookstore` database and the `books` collection.  
+All queries, aggregations, and indexing tasks were completed and screenshots are included.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+## 🚀 Setup
 
-## Getting Started
+1️⃣ I used **MongoDB Atlas** to host my database.  
+2️⃣ The database name is: `plp_bookstore`  
+3️⃣ The main collection is: `books`  
+4️⃣ Data was inserted manually via Atlas using an Insert Many JSON array.  
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+---
 
-## Files Included
+## 📂 Files Included
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+- `insert_books.js` – Contains the book data script (for reference).  
+- `queries.js` – Contains all MongoDB queries and aggregation pipelines used.  
+- `screenshots/` – Contains screenshots of:
+  - All queries run with their results
+  - Aggregation pipelines
+  - Index creation
+  - Explain plan output
 
-## Requirements
+---
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+## 📸 Screenshots List
 
-## Submission
+- `fiction_books.png` — Filter query: all books in genre "Fiction"
+- `published_after_2000.png` — Books published after 2000
+- `george_orwell_books.png` — Books by George Orwell
+- `updated_1984_price_before.png` — Price of 1984 before update  
+- `updated_1984_price_after.png` — Price of 1984 after update  
+- `deleted_moby_dick_before.png` — Moby Dick exists before deletion  
+- `deleted_moby_dick_after.png` — Moby Dick deleted  
+- `avg_price_by_genre.png` — Aggregation: average price by genre  
+- `author_most_books.png` — Aggregation: author with most books  
+- `books_by_decade.png` — Aggregation: books grouped by decade  
+- `index_on_title.png` — Index created on `title`
+- `index_on_author_year.png` — Compound index on `author` + `published_year`
+- `explain_plan.png` — Explain plan output for indexed search
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+---
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+## 📝 How to Run Queries
 
-## Resources
+Since I used Atlas:
+- Queries were executed in **Atlas Filter bar** and **Aggregation tab**.
+- No local script execution was required.
+- Results are captured in the screenshots.
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+---
+
+## 💡 Notes
+
+- Node.js was not used due to setup challenges; all tasks were done using the Atlas UI.
+- The database is accessible through MongoDB Atlas connection string (secured).  
+
+---
+
+## ✅ Submission
+
+All required files and screenshots are committed and pushed to this repository as instructed.
+
